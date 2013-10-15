@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Project Grades!</title>
+</head>
+
+<body>
+    <ul>
+        {% for grade in grades %}
+            <li>
+                <a href="/projects?project={{grade[1]}}">{{grade[1]}}</a>
+                {{grade[2]}}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Grades for given project</title>
+</head>
+
+<body>
+    <ul>
+        {% for grade in grades %}
+            <li>
+                <a href="/allgrades?github={{grade[0]}}">{{grade[0]}}</a>
+                {{grade[2]}}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
