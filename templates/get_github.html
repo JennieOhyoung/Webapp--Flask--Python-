@@ -1,38 +1,95 @@
 <html>
-    <body>
-        <br><br>
-        <form action="/student">
-            <label for="github"> Enter github id </label>
-            <input type="text" name="github" />
-            <input type="submit">
-        </form>
+	<head>
+		<title>TeachDat: Database Management for Teachers</title>
 
-        <br><br> 
-
-        <h2>To add new student</h2>
-        <form action="/newstudent">
-            <label for="first_name"> Enter first name </label>
-            <input type="text" name="first_name" /><br>
-            <label for="last_name"> Enter last name </label>
-            <input type="text" name="last_name" /><br>
-            <label for="github"> Enter Github </label>
-            <input type="text" name="github" /><br>
-            <input type="submit">
-        </form>
-
-        <br><br>
-        
-        <h2>To add new project</h2>
-        <form action="/newproject">
-            <label for="title">Enter title</label>
-            <input type="text" name="title" /><br>
-            <label for="description">Enter description</label>
-            <input type="text" name="description" /><br>
-            <label for="max_grade">Enter max grade possible</label>
-            <input type="text" name="max_grade" /><br>
-            <input type="submit">
-        </form>
-
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+    
+	<body>
+		<div id="content">
+			<div id="header">
+				<div id="title">
+					Teachdat <img src="check.png" />
+				</div>
+			
+				<div id="subtitle">
+					Database Management for Teachers
+				</div>
+				
+				<div id="main">
+					<div id="main-left">
+						<div id="container">
+					        <h2>Add New Student</h2>
+					        <form action="/newstudent">
+					            <label for="first_name">First Name</label>
+					            <input type="text" class="input" name="first_name" />
+								
+					            <label for="last_name">Last Name</label>
+					            <input type="text" class="input" name="last_name" />
+								
+					            <label for="github">Github Username</label>
+					            <input type="text" class="input" name="github" />
+								
+					            <input type="submit" id="button">
+					        </form>
+						</div>
+						
+						<div id="container">
+					        <h2>New Grade For Student</h2>
+					        <form action="/givegrade">
+					            <label for="github">Github Username</label>
+					            <input type="text" class="input" name="github" />
+								
+					            <label for="title">Project Title</label>
+					            <input type="text" class="input" name="title" />
+								
+					            <label for="grade">Grade Given</label>
+					            <input type="text" class="input" name="grade" />
+								
+					            <input type="submit" id="button">
+					        </form>
+						</div>
+					</div>
+					
+					<div id="main-right">
+				        <!-- <div id="container">
+					        <form action="/student">
+					            <label for="github">Github handle</label>
+					            <input type="text" name="github" />
+					            <input type="submit">
+					        </form>
+						</div> -->
+						
+						<div id="container">
+					        <h2>Add New Project</h2>
+					        <form action="/newproject">
+					            <label for="title">Project Title</label>
+					            <input type="text" class="input" name="title" />
+								
+					            <label for="description">Description</label>
+					            <input type="text" class="input" name="description" />
+								
+					            <label for="max_grade">Maximum Grade</label>
+					            <input type="text" class="input" name="max_grade" />
+								
+					            <input type="submit" id="button">
+					        </form>
+						</div>
+					
+						<div id="container">
+							<h2>List Grades For Student</h2>
+							<form action"/allgrades">
+								<label for="github">Github Username</label>
+					            <input type="text" class="input" name="github" />
+					            <input type="submit" id="button">
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
     </body>
 
 </html>
