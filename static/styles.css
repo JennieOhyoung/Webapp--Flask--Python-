@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*   
+	Amy Lin
+	Hackbright, Web App exerise
+	Fall 2013
+*/
+
+
+/* -----------------------------------*/
+/* ---------->>> GLOBAL <<<-----------*/
+/* -----------------------------------*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background: #fff;
+	font: 14px 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #373737;	
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font: 400 18px 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #3cb6ce;	
+	line-height: 28px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+a { 
+	color: #3cb6ce;
+	text-decoration: none;
+}
+	a:hover {
+		text-decoration: underline;
+	}
+
+img {
+	border:0;
+}
+
+strong {
+	font-weight: 600;
+}
+
+/* -------------------------------------------*/
+/* ---------->>> PAGE STRUCTURE <<<-----------*/
+/* -------------------------------------------*/
+
+#content {
+	margin: auto;
+	width: 100%;
+}
+
+#header {
+	width: 100%;
+	height: 100px;
+	padding: 55px 0 55px 0;
+	background-color: #3cb6ce;
+	text-align: center;
+}
+
+#title {
+	color: #fff;	
+	font: 40px 'Open Sans', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#subtitle {
+	color: #fff;	
+	font: 300 16px 'Roboto Slab', 'Times New Roman', serif;
+	text-transform: none;
+	text-align: center;
+	margin: 10px 0 65px 0;
+}
+
+#main {
+	width: 740px;
+	margin: auto;
+}
+
+#main-left {
+	float: left;
+	margin: 35px 0 55px 0;
+}
+
+#main-right {
+	float: right;
+	margin: 35px 0 55px 0;
+}
+
+#container {
+	background-color: #d3eef4;
+	padding: 25px;
+	margin: 35px 0 25px 0;
+	width: 300px;
+	height: 235px;
+	font: 12px 'Open Sans', Helvetica, Arial, sans-serif;
+	line-height: 28px;
+	text-align: left;
+}
+
+label {
+	width: 100%;
+	float: left;
+	text-align: left;
+	display: block;
+}
+
+.input {
+	width: 100%;
+	height: 20px;
+	background: #fff;
+	border: 1px solid #b7b7b7;
+}
+
+#button {
+	margin-top: 15px;
+}
+
+#clear {
+	clear: both;
+}
+	
+/* ---------------------------------------*/
+/* ---------->>> TEXT STYLE <<<-----------*/
+/* ---------------------------------------*/
+
+p {
+	margin: 20px 0 0 0;
+}

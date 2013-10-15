@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def get_github():
     return render_template("get_github.html")
+# point to HTML file --> styles.css in 'static'
 
 
 @app.route("/student")
